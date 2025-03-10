@@ -1,0 +1,732 @@
+/* CSS 초기화 */
+/* 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	color: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+} */
+
+.link-control {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+/* // HTML5 display-role reset for older browsers */
+/* article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/* ------------------------------------------------ */
+/* 디바이더------------------------------------ */
+.divider-sc {
+	width: 100%;
+	height: 1px;
+	background-color: #222222;
+}
+
+
+/* 폰트 스타일 정의 */
+.text_title_l {
+  font-family: Pretendard, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: #222222;
+}
+
+.text_title_m {
+  font-family: Pretendard, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: #222222;
+}
+
+.text_title_s {
+  font-family: Pretendard, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: #222222;
+}
+
+.text_title_xs {
+  font-family: Pretendard, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: #222222;
+}
+
+.text_body_xl {
+  font-family: Pretendard, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: #222222;
+}
+
+.text_body_l {
+  font-family: Pretendard, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0em;
+  /* Text-Basic */
+  color: #222222;
+}
+
+.text_body_m {
+  font-family: Pretendard, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0em;
+  color: #222222;
+}
+
+.text_body_s {
+  font-family: Pretendard, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #222222;
+}
+
+.text_body_xs {
+  font-family: Pretendard, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #222222;
+}
+
+.text_align_center {
+  text-align: center;
+}
+
+.amount-value {
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #222222;
+}
+
+.status-number {
+  color: #025f66;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* 폰트 컬러 정의 */
+.font_black_light {
+  color: #999999;
+}
+
+.primary {
+  color: #025f66;
+}
+
+/* 아이콘 컨트롤---------------------------- */
+.icon_16 img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  /* 아이콘 비율 유지 */
+}
+
+/* 버튼 컨트롤---------------------------- */
+/* edit 버튼 세컨 */
+.btn-small-sc {
+  background: #e0e6de;
+  /* height: 20px; */
+  color: #025f66;
+  padding: 4px 8px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: Pretendard, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 100%;
+  transition: all 0.3s ease; /* 부드러운 상태 전환 */
+}
+
+/* Hover 상태 */
+.btn-small-sc:hover {
+  background: #cfd6cd; /* 배경을 약간 어둡게 */
+  color: #014a50; /* 텍스트 색상을 조금 더 진하게 */
+}
+
+/* Active 상태 (클릭 중) */
+.btn-small-sc:active {
+  background: #b7c1b5; /* 더 진한 어두운 톤 */
+  color: #01373d; /* 눌리는 느낌을 위한 어두운 텍스트 색상 */
+  transform: scale(0.98); /* 클릭 시 살짝 눌리는 효과 */
+}
+
+/* Focus 상태 (키보드 포커스) */
+.btn-small-sc:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(2, 95, 102, 0.5); /* 포커스 시 강조 테두리 */
+  background: #d5dbd2; /* 포커스 시 강조 배경색 */
+}
+
+/* Disabled 상태 */
+.btn-small-sc:disabled {
+  background: #f0f4ef; /* 흐릿한 배경 */
+  color: #b0b9b5; /* 비활성화된 텍스트 */
+  cursor: not-allowed;
+}
+
+/* edit 버튼 */
+.btn-small {
+  background: #00838c;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: Pretendard, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 100%;
+  transition: all 0.3s ease; /* 부드러운 상태 전환 */
+}
+
+/* Hover 상태 */
+.btn-small:hover {
+  background: #006a73; /* 살짝 어두운 톤 */
+  color: #e0ffff; /* 텍스트를 약간 밝게 */
+}
+
+/* Active 상태 (클릭 중) */
+.btn-small:active {
+  background: #004f52; /* 더 깊은 어두운 톤 */
+  color: #cce7e8; /* 눌리는 느낌을 위한 색 조정 */
+  transform: scale(0.98); /* 클릭 시 살짝 눌리는 효과 */
+}
+
+/* Focus 상태 (키보드 포커스) */
+.btn-small:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 131, 140, 0.5); /* 포커스 시 강조 테두리 */
+  background: #007780; /* 포커스 상태의 강조 배경색 */
+}
+
+/* Disabled 상태 */
+.btn-small:disabled {
+  background: #b2d8d9; /* 흐릿한 배경 */
+  color: #f0f0f0; /* 비활성화된 텍스트 */
+  cursor: not-allowed;
+}
+
+/* 프라이머리 버튼 */
+/* 아웃라인 버튼 기본 스타일 */
+.btn-primary-outline {
+  width: 100%;
+  height: 36px;
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #025f66;
+  border-radius: 4px;
+  color: #025f66;
+  font-size: 14px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease; /* 부드러운 상태 전환 */
+}
+
+/* Hover 상태 */
+.btn-primary-outline:hover {
+  background: #f0fcfc; /* 배경을 살짝 연하게 */
+  border-color: #014a50; /* 더 진한 테두리 */
+  color: #014a50; /* 텍스트 색상도 조화롭게 변경 */
+}
+
+/* Active 상태 (클릭 중) */
+.btn-primary-outline:active {
+  background: #e6f7f8; /* 더 진한 배경 */
+  border-color: #01373d; /* 진한 테두리 */
+  color: #01373d; /* 텍스트 색상도 어둡게 */
+  transform: scale(0.98); /* 클릭 시 살짝 눌리는 효과 */
+}
+
+/* Focus 상태 (키보드 포커스) */
+.btn-primary-outline:focus {
+  outline: none;
+  border-color: #025f66; /* 포커스 강조 */
+  box-shadow: 0 0 4px rgba(2, 95, 102, 0.5); /* 포커스 시 그림자 효과 */
+}
+
+/* Disabled 상태 */
+.btn-primary-outline:disabled {
+  background: #f8f8f8; /* 흐린 배경 */
+  border-color: #cccccc; /* 흐린 테두리 */
+  color: #999999; /* 흐릿한 텍스트 */
+  cursor: not-allowed;
+}
+
+/* 필 버튼 기본 스타일 */
+.btn-primary {
+  width: 100%;
+  height: 36px;
+  padding: 8px 12px;
+  background: #025f66;
+  border: 1px solid #025f66;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease; /* 부드러운 상태 전환 */
+}
+
+/* Hover 상태 */
+.btn-primary:hover {
+  background: #014a50; /* 살짝 더 어두운 톤 */
+  color: #e0ffff; /* 텍스트를 약간 밝게 */
+}
+
+/* Active 상태 (클릭 중) */
+.btn-primary:active {
+  background: #01373d; /* 더 진한 어두운 톤 */
+  color: #cce7e8; /* 눌리는 느낌을 위한 색 조정 */
+  transform: scale(0.98); /* 클릭 시 살짝 눌리는 효과 */
+}
+
+/* Focus 상태 (키보드 포커스) */
+.btn-primary:focus {
+  outline: none;
+  border: 1px solid #01737b; /* 포커스 상태의 강조 테두리 */
+  box-shadow: 0 0 4px rgba(2, 95, 102, 0.5); /* 포커스 강조 효과 */
+  background: #024c55; /* 포커스 시 강조 배경색 */
+}
+
+/* Disabled 상태 */
+.btn-primary:disabled {
+  background: #b2d8d9; /* 흐릿한 배경 */
+  color: #f0f0f0; /* 비활성화된 텍스트 */
+  cursor: not-allowed;
+}
+
+/* 세컨더리 버튼 */
+.btn-secondary-outline {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 36px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #00838c;
+  background: #ffffff;
+  border: 1px solid #00838c;
+  font-family: Pretendard, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0em;
+  cursor: pointer;
+  transition: all 0.3s ease; /* 부드러운 상태 전환 */
+}
+
+/* Hover 상태 */
+.btn-secondary-outline:hover {
+  background: #f0fcfc; /* 살짝 파스텔 느낌의 배경 */
+  border-color: #006a73; /* 더 진한 색상 */
+  color: #006a73; /* 텍스트 색상도 조화롭게 변경 */
+}
+
+/* Active 상태 (클릭 중) */
+.btn-secondary-outline:active {
+  background: #e6f7f8; /* 눌리는 느낌을 위한 더 진한 배경 */
+  border-color: #004f52;
+  color: #004f52;
+  transform: scale(0.98); /* 클릭 시 살짝 눌리는 효과 */
+}
+
+/* Focus 상태 (키보드 포커스) */
+.btn-secondary-outline:focus {
+  outline: none;
+  border-color: #00838c;
+  box-shadow: 0 0 4px rgba(0, 131, 140, 0.5);
+}
+
+/* Disabled 상태 */
+.btn-secondary-outline:disabled {
+  background: #f8f8f8; /* 흐린 배경 */
+  border-color: #cccccc;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  background: #00838c;
+  font-family: Pretendard, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0em;
+  cursor: pointer;
+  transition: all 0.3s ease; /* 부드러운 상태 전환 */
+}
+
+/* Hover 상태 */
+.btn-secondary:hover {
+  background: #006a73; /* 살짝 더 어두운 톤 */
+  color: #e0ffff; /* 텍스트를 약간 밝게 */
+}
+
+/* Active 상태 (클릭 중) */
+.btn-secondary:active {
+  background: #004f52; /* 더 깊은 어두운 톤 */
+  color: #cce7e8; /* 눌리는 느낌을 위한 색 조정 */
+  transform: scale(0.98); /* 클릭 시 눌리는 효과 */
+}
+
+/* Focus 상태 (키보드 포커스) */
+.btn-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 131, 140, 0.5);
+  background: #007780; /* 포커스 시 살짝 강조된 배경 */
+}
+
+/* Disabled 상태 */
+.btn-secondary:disabled {
+  background: #b2d8d9; /* 흐릿한 배경 */
+  color: #f0f0f0; /* 비활성화된 텍스트 */
+  cursor: not-allowed;
+}
+
+.btn-fill {
+  width: 100%;
+}
+
+.read-more-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  padding: 16px;
+  color: #676767;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* 부드러운 상태 전환을 위한 트랜지션 */
+}
+
+/* Hover 상태 */
+.read-more-button:hover {
+  background: #f9f9f9;
+  border-color: #666666;
+  color: #333333;
+}
+
+/* Active 상태 (클릭 중) */
+.read-more-button:active {
+  background: #eeeeee;
+  border-color: #444444;
+  color: #222222;
+  transform: scale(0.98); /* 클릭 시 살짝 눌리는 효과 */
+}
+
+/* Focus 상태 (키보드 포커스) */
+.read-more-button:focus {
+  outline: none;
+  border-color: #00838c;
+  box-shadow: 0 0 4px rgba(0, 131, 140, 0.5);
+}
+
+/* Disabled 상태 */
+.read-more-button:disabled {
+  background: #f0f0f0;
+  border-color: #cccccc;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+/* 체크박스 컨트롤 */
+/* 체크박스 컨테이너 */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 숨겨진 기본 체크박스 */
+.checkbox-input {
+  display: none;
+}
+
+/* 커스텀 체크박스 스타일 */
+.product-checkbox {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #999999;
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+}
+
+/* 체크 상태 */
+.checkbox-input:checked + .product-checkbox {
+  background: #00838c;
+  border: 1px solid #00838c;
+}
+
+/* 체크 표시 */
+.product-checkbox::after {
+  content: "✔";
+  /* 체크 모양 문자 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 16px;
+  /* 체크 아이콘 크기 */
+  color: white;
+  /* 체크 아이콘 색상 */
+  transition: transform 0.2s ease;
+}
+
+.checkbox-input:checked + .product-checkbox::after {
+  transform: translate(-50%, -50%) scale(1);
+  /* 체크되었을 때 표시 */
+}
+
+/* 제목---------------------------------------------- */
+.title_all {
+  font-family: Pretendard, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0em;
+  color: #025f66;
+  padding: 24px 0 0 0;
+}
+
+/* 인풋박스------------------------------------------- */
+/* Input 박스 컨테이너 기본 스타일 */
+.custom-inputbox-container {
+  width: 100%;
+  height: 36px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #e0e6de;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input 박스 기본 스타일 */
+.custom-inputbox {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 400;
+  color: #222222;
+  background: transparent;
+  line-height: 14px;
+  caret-color: #025f66; /* 커서 색상 */
+}
+
+/* Placeholder 스타일 */
+.custom-inputbox::placeholder {
+  color: #999999;
+}
+
+/* 포커스 상태 */
+.custom-inputbox:focus {
+  border-color: none;
+  box-shadow: none;
+  color: #025f66;
+}
+
+/* 컨테이너 포커스 상태 */
+.custom-inputbox-container:focus-within {
+  border-color: #00838c;
+  box-shadow: 0 0 4px rgba(0, 131, 140, 0.5);
+}
+
+/* 비활성화 상태 */
+.custom-inputbox:disabled {
+  color: #999999;
+  cursor: not-allowed;
+}
+
+/* 비활성화 컨테이너 스타일 */
+.custom-inputbox-container.custom-inputbox-disabled {
+  background: #f7f7f7;
+  border-color: #e0e6de;
+}
+
+/* 에러 상태 */
+.custom-inputbox-container.custom-inputbox-error {
+  border-color: #ff5a5a;
+  box-shadow: 0 0 4px rgba(255, 90, 90, 0.5);
+}
+
+.custom-inputbox-container.custom-inputbox-error .custom-inputbox {
+  color: #ff5a5a;
+}
+
+/* 성공 상태 */
+.custom-inputbox-container.custom-inputbox-success {
+  border-color: #52c41a;
+  box-shadow: 0 0 4px rgba(82, 196, 26, 0.5);
+}
+
+.custom-inputbox-container.custom-inputbox-success .custom-inputbox {
+  color: #52c41a;
+}

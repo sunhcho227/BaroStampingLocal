@@ -1,0 +1,69 @@
+{
+  "name": "stamping",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.5.0",
+    "@azure/storage-blob": "^12.25.0",
+    "@babel/runtime": "^7.23.5",
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/free-solid-svg-icons": "^6.7.1",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.1.5",
+    "@zxing/library": "^0.21.3",
+    "abort-controller": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "html5-qrcode": "^2.3.8",
+    "jquery": "^3.7.1",
+    "lottie-web": "^5.12.2",
+    "meteor-node-stubs": "^1.2.7",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.73.1",
+    "qrcode.react": "^4.1.0",
+    "react": "^18.2.0",
+    "react-barcode": "^1.5.3",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.4.0",
+    "react-kakao-maps-sdk": "^1.1.27",
+    "react-loader-spinner": "^6.1.6",
+    "react-lottie": "^1.2.10",
+    "react-qr-scanner": "^1.0.0-alpha.11",
+    "react-responsive": "^10.0.0",
+    "react-router-dom": "^6.28.0",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
+    "tiktoken-node": "^0.0.7",
+    "uuid": "^11.0.3",
+    "web-streams-polyfill": "^3.2.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  },
+  "version": "1.0.0",
+  "description": "��#\u0000 \u00000\u0000.\u0000T\u0000e\u0000a\u0000c\u0000h\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "author": "",
+  "license": "ISC"
+}

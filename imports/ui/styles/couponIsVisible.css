@@ -1,0 +1,189 @@
+.storedetail-useablecouponlist.hide {
+  display: none;
+}
+
+.storedetail-useablecouponlist.show {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.storedetail-useablecouponlist.hide,
+.storedetail-stampstorelist.hide {
+  display: none;
+}
+
+.storedetail-useablecouponlist.show,
+.storedetail-stampstorelist.show {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 0;
+}
+
+.choice-button {
+  /* display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid #007780;
+  border-radius: 5px;
+  background-color: white;
+  color: #007780;
+  font-family: Pretendard, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; */
+  display: block;
+  /* width: 100%; */
+  /* height: 36px; */
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #00838c;
+  background: #ffffff;
+  border: 1px solid #00838c;
+  font-family: Pretendard, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0em;
+  cursor: pointer;
+  transition: all 0.3s ease; /* 부드러운 상태 전환 */
+}
+
+.choice-button.selected {
+  /* background-color: #cce7e8;
+  color: #007780; */
+  background: #00838c;
+  color: #ffffff; 
+  border: 1px solid #006064; 
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 131, 140, 0.6); 
+}
+
+/* 클릭 시 작아짐 방지 */
+.choice-button:active {
+  transform: none; /* 기본 눌림 효과 제거 */
+  box-shadow: 0 0 4px rgba(0, 131, 140, 0.6); /* 눌림 상태에서도 동일한 그림자 유지 */
+}
+
+.dalle-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* height: 100vh;  */
+  padding: 0 24px 100px 24px;
+}
+
+.dalle-container.sc {
+  gap: 16px;
+}
+
+.dalle-inin {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #F7F7F7;
+  padding: 24px;
+}
+
+.dalle-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dalle-item-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.loading-spinner::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.generated-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px;
+}
+
+.quantity-control-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #025f66;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quantity-control-btn:hover {
+  background-color: #f0fcfc;
+}
+
+.quantity-control-btn:active {
+  background-color: #e6f7f8;
+  transform: scale(0.95);
+}
+
+.quantity-control-btn img {
+  width: 14px;
+  height: 14px;
+}
+
+.quantity-value {
+  min-width: 40px;
+  font-family: Pretendard, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+  text-align: center;
+}
+
+
+.dalle-output {
+  padding: 0 24px 100px 24px;
+  /* background-color: #F7F7F7; */
+}

@@ -1,0 +1,11 @@
+{
+  "semi": true, // 세미콜론 사용 여부 (기본값: true)
+  "singleQuote": true, // 작은따옴표 사용 여부 (기본값: false)
+  "tabWidth": 2, // 탭 너비 설정 (기본값: 2)
+  "useTabs": false, // 탭 대신 공백 사용 (기본값: false)
+  "trailingComma": "es5", // 후행 쉼표 추가 ("none", "es5", "all")
+  "printWidth": 80, // 한 줄 최대 길이 (기본값: 80)
+  "bracketSpacing": true, // 객체 중괄호 사이 공백 삽입 여부
+  "arrowParens": "always",
+  "liveServer.settings.port": 5501 // 화살표 함수의 매개변수 괄호 사용
+}

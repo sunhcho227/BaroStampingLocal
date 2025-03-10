@@ -1,0 +1,58 @@
+.user-nav-container {
+  margin: 0 auto;
+  width: 100%; 
+  max-width: 600px;
+  box-sizing: border-box;
+  height: 76px;
+  padding: 12px 24px;
+  background: #01474C;
+  box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed; /* 화면에 고정 */
+  bottom: 0px; 
+  z-index: 1000; /* 다른 요소보다 위에 표시 */
+  left: 50%;
+  transform: translateX(-50%); /* 가로 중앙 정렬 */
+}
+
+.main-nav-container {
+  margin: 0 auto;
+  width: 100%; 
+  max-width: 600px;
+}
+
+.user-navi-item {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: 4px;
+}
+
+.user-navi-item:hover {
+  color: #00838C; /* 텍스트 색상 변경 */
+}
+
+.nav-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-label {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}

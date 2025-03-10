@@ -1,0 +1,1279 @@
+/* MyStore------------------------------------ */
+
+.mystore-container {
+  margin: 0 auto;
+  /* box-sizing: border-box; */
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* padding-bottom: 88px; */
+  /* height: fit-content; */
+  /* height: 100vh;  */
+  padding-bottom: 100px;
+}
+
+.mystore-store {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 24px 0 24px;
+}
+
+.mystore-store.orderonly {
+  padding: 0;
+}
+
+.mystore-store.mystoreonly {
+  padding: 0 24px 24px 24px;
+}
+
+/* Mypage--------------------------------------------- */
+.mypage-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* padding-bottom: 88px; */
+  /* height: calc(100vh - 76px); */
+  /* height: fit-content; */
+  padding-bottom: 100px;
+}
+
+.ai-image-notice-box {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #f3fbdf;
+  gap: 12px;
+}
+
+.ai-image-notice {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+
+.ai-image-notice img {
+  width: 20px;
+  height: 20px;
+}
+
+.mypage-top {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 24px 0 24px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.profile-header-button {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.profile-header-icon {
+  color: #00838c;
+  fill: #00838c;
+}
+
+.profile-header-button-openai {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.profile-header-button-openai img {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-image-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 2; 
+  background: #d9d9d9;
+  border-radius: 4px;
+  overflow: hidden;
+  background-position: center; /* 이미지를 중앙에 위치시킴 */
+  background-repeat: no-repeat; /* 이미지 반복 금지 */
+  background-size: cover; /* div 크기를 초과한 이미지는 잘라냄 */
+  /* background-image: url("/images/placeholderimg.png"); */
+  
+}
+
+.profile-image-placeholder img {
+  width: 100%; /* 이미지가 부모의 너비에 맞게 조정 */
+  height: 100%; /* 이미지가 부모의 높이에 맞게 조정 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 자르기 */
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 12px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.profile-info {
+  padding: 12px 12px 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coupon-status-container {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  padding: 0 24px 0 24px;
+}
+
+.status-card-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #00838c ; */
+  border-radius: 12px;
+}
+
+.status-card {
+  width: 100%;
+  padding: 12px 12px;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 12px;
+}
+
+.status-count {
+  display: flex;
+  flex-direction: row;
+  align-items: last baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.status-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 0 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.myreviews-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 24px 24px 24px;
+}
+
+.reviews-header {
+  width: 100%;
+  border-bottom: 1px solid #025f66;
+}
+
+.review-item {
+  width: 100%;
+  background: #fafcfc;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviewer-avatar {
+  width: 48px;
+  height: 48px;
+  background: #f7c15c;
+  border-radius: 50%;
+}
+
+.review-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  background: #676767;
+  transform: rotate(-90deg);
+}
+
+/* EditProfile------------------ */
+/* Register */
+/* EditPassWord */
+.profile-edit-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 24px;
+  width: 100%;
+  /* height: 100vh; */
+  /* height: 100vh; */
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* height: calc(100vh - 76px); */
+  /* height: calc(100vh - 76px); */
+  padding-bottom: 76px;
+  /* height: fit-content;
+  padding-bottom: 100px; */
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile_keyarea {
+  width: 120px;
+}
+
+/* Order------------------------------------------- */
+.order-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* padding-bottom: 88px; */
+  /* height: calc(100vh - 76px); */
+  /* height: fit-content; */
+  padding-bottom: 100px;
+}
+
+/* Container for recent orders */
+.recent-orders-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 24px 24px;
+  gap: 24px;
+}
+
+.header-title {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title-text {
+  color: #025f66;
+  font-size: 18px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.header-spacer {
+  flex-grow: 1;
+}
+
+/* Recent orders list */
+.recent-orders-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Individual order card */
+.order-card {
+  width: 100%;
+  padding: 24px;
+  background: #fafcfc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 4px;
+}
+
+.order-info {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.order-thumbnail {
+  width: 240px;
+  height: 80px;
+  background: #d9d9d9;
+}
+
+.order-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: center;
+}
+
+.order-title {
+  color: black;
+  font-size: 16px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.order-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-items {
+  color: #222222;
+  font-size: 14px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.order-date {
+  color: #222222;
+  font-size: 12px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 400;
+  line-height: 14.4px;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  transform: rotate(-90deg);
+  background: #676767;
+}
+
+.profile-btn-actions {
+  padding: 24px 0 24px 0;
+  display: flex;
+  gap: 16px;
+}
+
+/* 닉네임수정----------------------------------------- */
+
+.nick-edit-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+
+.nick-edit-button {
+  display: flex;
+  gap: 8px;
+  justify-content: end;
+}
+
+.nick-edit-button-start {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.store-detail-userstamps {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.userstanos-control {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 0 24px 0;
+}
+
+/* couponsAvailable------------------------------------- */
+.couponavailable-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 88px; */
+  /* height: calc(100vh - 76px); */
+  /* height: fit-content; */
+  /* padding-bottom: 100px; */
+}
+
+/* couponused------------------------------------------------ */
+.couponused-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  /* height: calc(100vh - 76px); */
+  /* height: fit-content; */
+  /* padding-bottom: 100px; */
+}
+
+.mycoupons-sc {
+  padding: 0 24px 0px 24px;
+}
+
+/* 로그인--------------------------------------------------------- */
+.login-page-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 100px;
+  background: linear-gradient(137deg, #024c52 3%, #013034 100%);
+}
+
+.login-box {
+  padding: 40px 24px 80px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-box {
+  padding: 40px 40px 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box img {
+  width: 80%;
+  animation: pulse 2s infinite; /* 펄스 애니메이션 */
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1); /* 기본 크기 */
+  }
+  50% {
+    transform: scale(1.1); /* 10% 확대 */
+  }
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button-container {
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.join-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.join {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.separator {
+  width: 2px;
+  height: 14px;
+  background: #e0e6de;
+}
+
+.join_text_color {
+  color: #e0e6de;
+}
+
+.join_text_color.white {
+  color: #ffffff;
+}
+
+.logout-text {
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* payment----------------------------------- */
+.cart-product-count {
+  display: flex;
+  gap: 8px;
+}
+
+/* editReview------------------------------------------ */
+
+.editreview-container {
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: calc(100vh - 76px);
+  padding-bottom: 76px;
+  /* height: fit-content;
+  padding-bottom: 100px; */
+}
+
+.reviewrating {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 0 12px 0;
+  text-align: center;
+}
+
+.reviewrating-edit {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 12px 24px 12px 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewrating-text {
+  width: 100px;
+}
+
+.reviewrating-star {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+}
+
+.edit-review-input {
+  width: 100px;
+}
+
+.nomember-main-message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  background-color: #fafcfc;
+  margin-bottom: 16px;
+}
+
+.joinus-message {
+  display: inline-flex; /* 텍스트와 이미지를 수평으로 배치 */
+  align-items: center; /* 텍스트와 이미지를 세로 중앙 정렬 */
+  border-bottom: 1px solid #00838c;
+}
+
+.joinus-message img {
+  width: 12px; /* 이미지 크기 조정 */
+  height: auto; /* 비율 유지 */
+}
+
+/* joinStamping------------------------------------- */
+/* Container */
+.joinstamping-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 48px;
+  background-color: #f7f7f7;
+}
+
+.joinus-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Benefits Section */
+.joinstamping-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Individual Benefit */
+.joinstamping-benefit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* register--------------------- */
+
+/* makeCoupon---------------------- */
+.makecoupon-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 88px; */
+  /* height: calc(100vh - 76px);  */
+  /* height: fit-content; */
+  padding-bottom: 100px;
+}
+
+.inputbox_200px {
+  width: 200px;
+  justify-content: center;
+}
+
+.makecoupon-header {
+  width: 100%;
+  padding: 0 24px 24px 24px;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.makecoupon-quantity-selector {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* .no-spin 클래스에만 스핀 버튼 제거 */
+.no-spin::-webkit-inner-spin-button,
+.no-spin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spin {
+  -moz-appearance: textfield; /* Firefox용 */
+}
+
+.makecoupon-stamp-info {
+  width: 100%;
+  padding: 24px;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.makecoupon-current-stamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+}
+
+.remaining-stamp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.makecoupon-selection {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.placeholder-box {
+  width: 300px;
+  height: 200px;
+  background-color: #99a6a7;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.placeholder-box img {
+  width: 100%; /* 컨테이너의 너비에 맞춤 */
+  height: 100%; /* 컨테이너의 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너를 채움 */
+}
+
+.makecoupon-footer {
+  width: 100%;
+  padding: 24px;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Coupon-plus------------------------------------- */
+.sc-coupon-card {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: box-shadow 0.3s ease;
+  border: 1px solid #00a9b5;
+}
+
+.sc-coupon-card:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* 더 짙고 선명한 그림자 */
+  transition: box-shadow 0.3s ease; /* 효과가 부드럽게 적용되도록 설정 */
+}
+
+.sc-coupon-content {
+  flex: 1;
+  /* height: 88px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.sc-coupon-image {
+  width: 60px;
+  height: 60px;
+  background: #a9a9a9;
+  background-size: cover; /* 이미지가 상자에 꽉 차도록 설정 */
+  background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sc-coupon-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너를 채움 */
+}
+
+.sc-coupon-type {
+  color: black;
+  font-size: 8.8px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.sc-coupon-details {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.sc-coupon-title {
+  color: black;
+  font-size: 18px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 600;
+  line-height: 18px;
+  word-wrap: break-word;
+  align-self: stretch;
+}
+
+.sc-coupon-info {
+  /* height: 32px; */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sc-store-name,
+.sc-coupon-description {
+  color: black;
+  font-size: 14px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 400;
+  line-height: 14px;
+  word-wrap: break-word;
+  align-self: stretch;
+}
+
+.sc-coupon-expiry {
+  color: black;
+  font-size: 12px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 400;
+  line-height: 14.4px;
+  word-wrap: break-word;
+  align-self: stretch;
+}
+
+.sc-coupon-action {
+  width: 52px;
+  height: 52px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px #00838c solid;
+  /* background-color: #00838C; */
+  /* color: white; */
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* mycouponstamp -------------------------- */
+.mysc-coupon-card {
+  width: 100%;
+  padding: 16px 24px;
+  background: white;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mysc-coupon-card.used {
+  background: #f1f3f0;
+}
+
+.mysc-coupon-header {
+  width: 100%;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.mysc-coupon-details {
+  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.mysc-coupon-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mysc-store-logo {
+  width: 100px;
+  height: 100px;
+  background: #a9a9a9;
+  background-size: cover; /* 이미지가 상자에 꽉 차도록 설정 */
+  background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.mysc-store-logo img {
+  min-width: 100%; /* 최소한 div의 너비를 채움 */
+  min-height: 100%; /* 최소한 div의 높이를 채움 */
+  object-fit: cover; /* 비율 유지하며 크기를 맞춤 */
+}
+
+.mysc-store-couponimg {
+  width: 100px;
+  height: 100px;
+  background: #a9a9a9;
+  background-size: cover; /* 이미지가 상자에 꽉 차도록 설정 */
+  background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.mysc-store-couponimg img {
+  min-width: 100%; /* 최소한 div의 너비를 채움 */
+  min-height: 100%; /* 최소한 div의 높이를 채움 */
+  object-fit: cover; /* 비율 유지하며 크기를 맞춤 */
+}
+
+.mysc-coupon-footer {
+  width: 100%;
+  padding: 8px 10px;
+  background: #a9a9a9;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+/* card-flip */
+.card-container {
+  width: 100%; /* 카드 컨테이너의 너비 설정 */
+  height: 160px;
+  perspective: 1000px; /* 3D 효과를 위한 원근감 */
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d; /* 자식 요소의 3D 변환 유지 */
+  transition: transform 0.6s; /* 부드러운 회전 애니메이션 */
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg); /* Y축으로 180도 회전 */
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden; /* 뒷면 숨기기 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-front {
+  background: white; /* 앞면의 배경색 */
+  z-index: 2; /* 앞면이 기본적으로 위에 있도록 설정 */
+}
+
+.card-back {
+  background: #fafcfc; /* 뒷면의 배경색 */
+  transform: rotateY(180deg); /* 뒷면을 회전시켜 뒤집힌 상태로 배치 */
+}
+
+/* oderlist sc--------------------------| */
+
+.orderls-store-card {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  background: #fafcfc;
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.orderls-store-card-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.orderls-store-info {
+  height: 80px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.orderls-store-thumbnail {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  background: #d9d9d9;
+  background-size: cover; /* 이미지가 상자에 꽉 차도록 설정 */
+  background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
+}
+
+.orderls-store-thumbnail img {
+  min-width: 100%; /* 최소한 div의 너비를 채움 */
+  min-height: 100%; /* 최소한 div의 높이를 채움 */
+  object-fit: cover; /* 비율 유지하며 크기를 맞춤 */
+}
+
+.orderls-store-details {
+  display: inline-flex;
+  flex-direction: column;
+  /* justify-content: flex-start;
+  align-items: flex-start; */
+  gap: 4px;
+}
+
+.orderls-status-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.orderls-store-options {
+  width: 20px;
+  height: 20px;
+  background: #e0e6de;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.orderls-option-dot {
+  width: 3px;
+  height: 3px;
+  background: #00838c;
+  border-radius: 50%;
+}
+
+.order-details-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-details-item-sc {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  text-align: center;
+  justify-content: center;
+}
+
+.orderls-card-front-button-action {
+  display: flex;
+  flex: row;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.orderls-card-front-pickup {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+/* StampTour------------------------------------- */
+.stamptour-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+  /* padding-bottom: 88px; */
+  /* height: fit-content; */
+  /* height: 100vh;  */
+  padding-bottom: 100px;
+}
+
+.stamptour-titlebox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stamptour-contentsbox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 48px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+}
+
+.stamptour-contentsbox-img-placeholder {
+  border-radius: 12px;
+}
+
+.stamptour-status {
+  width: 100%;
+  border: 1px solid #00838c;
+  border-radius: ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.circle {
+  font-size: 24px;
+  color: #ccc;
+}
+
+.circle.filled {
+  color: #04becc; /* 색칠된 동그라미 색상 (초록색) */
+}
+
+.stamptour_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* codeInput */
+.codeip-container {
+  width: 100%;
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.codeip-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* order.jsx */
+.order-logos {
+  width: 60px;            
+  height: 60px; 
+  background-color: #d1d5db;
+  background-size: cover; /* 이미지가 상자에 꽉 차도록 설정 */        
+  background-position: center; /* 이미지가 중앙에 위치하도록 설정 */    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+  /* borderRadius: '50%' */
+  border-radius: 50%;
+}
+
+.order-logos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* LandingPage */
+.landingpage-container {
+  margin: 0 auto;
+  /* box-sizing: border-box; */
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* padding-bottom: 88px; */
+  /* height: fit-content; */
+  /* height: 100vh;  */
+  padding-bottom: 100px;
+}
