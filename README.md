@@ -1,6 +1,6 @@
 기본 user
 ID : user1
-PW:
+PW: 12
 
 기본 admin
 ID : admin1
